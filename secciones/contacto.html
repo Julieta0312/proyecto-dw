@@ -4,69 +4,92 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contacto</title>
-	<link rel="icon" type="text/css" href="../assets/img/favicon.png">
-	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<link rel="icon" type="text/css" href="../assets/img/favicon.png">	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
-<body>
-	<header class="header">
-		<div class="menu__container">
-			<nav>
-	  	    <ul class="menu">
-	  		   <li class="menu__li"><a class="menu__link" href="../secciones/fixture.html">Fixture</a>
-	  		       <ul class="submenu">
-	  			      <li class="submenu__li"><a class="menu__link" href="../secciones/fixture.html#ligaA">Liga A</a></li>
-	  			      <li class="submenu__li"><a class="menu__link" href="../secciones/fixture.html#ligaB">Liga B</a></li>
-	  			</ul></li>
-	  		    <li class="menu__li"><a class="menu__link"  href="../secciones/equipos.html">Equipos</a>
-                    <ul class="submenu">
-	  			        <li class="submenu__li"><a class="menu__link" href="../secciones/equipos.html#ligaA">Liga A</a></li>
-	  			        <li class="submenu__li"><a class="menu__link" href="../secciones/equipos.html#ligaB">Liga B</a></li>
-	  			</ul></li>
-	  		    <li class="menu__li"><a class="menu__link"  href="../secciones/tablas.html">Tablas</a>
-	  			    <ul class="submenu">
-	  			       <li class="submenu__li"><a class="menu__link" href="../secciones/tablas.html#posiciones">Posiciones</a></li>
-	  			       <li class="submenu__li"><a class="menu__link" href="../secciones/tablas.html#goleadoras">Goleadoras</a></li>
-	  			       <li class="submenu__li"><a class="menu__link" href="../secciones/tablas.html#tarjetas">Tarjetas</a></li>
-	  			</ul></li>
-	  
-	  	<a class="name" href="../index.html">TZN</a>
-	  	
-	  		<li class="menu__li"><a class="menu__link" href="../secciones/reglamento.html">Reglamento</a></li>
-	  		<li class="menu__li"><a class="menu__link" href="../secciones/nosotros.html">Nosotros</a></li>
-	  		<li class="menu__li"><a class="menu__link" href="contacto.html">Contacto</a></li>
-	  	</ul>
-	  </nav>
-	    </div>
-	</header>
+<header>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="fs-1 fw-bold navbar-brand" href="../index.html">TZN</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        </li>
+        <li class="nav-item dropdown">
+          <a class="fs-2 ms-5 nav-link dropdown-toggle btn btn-outline-warning" href="../secciones/fixture.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Fixture
+          </a>
+          <ul class="dropdown-menu bg-warning">
+            <li><a class="fs-2 dropdown-item" href="../secciones/fixture.html#ligaA">Liga A</a></li>
+            <li><a class="fs-2 dropdown-item" href="../secciones/fixture.html#ligaB">Liga B</a></li>
+            </ul>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="fs-2 ms-5 nav-link dropdown-toggle btn btn-outline-warning" href="../secciones/equipos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Equipos
+          </a>
+          <ul class="dropdown-menu bg-warning">
+            <li><a class="fs-2 dropdown-item" href="../secciones/equipos.html#ligaA">Liga A</a></li>
+            <li><a class="fs-2 dropdown-item" href="../secciones/equipos.html#ligaB">Liga B</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="fs-2 ms-5 nav-link dropdown-toggle btn btn-outline-warning" href="../secciones/tablas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tablas
+          </a>
+          <ul class="dropdown-menu bg-warning">
+            <li><a class="fs-2 dropdown-item" href="../secciones/tablas.html#posiciones">Posiciones</a></li>
+            <li><a class="fs-2 dropdown-item" href="../secciones/tablas.html#goleadoras">Goleadoras</a></li>
+            <li><a class="fs-2 dropdown-item" href="../secciones/tablas.html#tarjetas">Tarjetas</a></li>
+            </ul>
+        </li>
+<li class="nav-item">
+          <a class="fs-2 nav-link active ms-5" aria-current="page" href="../secciones/reglamento.html">Reglamento</a>
+        </li>
+        <li class="nav-item">
+          <a class="fs-2 nav-link active ms-5" aria-current="page" href="../secciones/nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="fs-2 nav-link active ms-5" aria-current="page" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
 	<section>
         <div>
         	<h3 class="contacto__title">Encontranos Acá:</h3>
 	        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6579.352946526387!2d-58.86179547663993!3d-34.460359611825616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9dccf077a96b%3A0x58183c5594191932!2sHakuna%20Torneos!5e0!3m2!1ses-419!2sar!4v1666124567403!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-    <aside class="form"> 
-  		<form>	
- 		    <fieldset>
- 			    <legend class="form__title">Si tenés dudas, escribinos!</legend>
- 			       <label class="form__label" for="nombre">Nombre</label>
- 			       <input class="form__input" type="text" name="nombre"> 			
- 			       <label class="form__label" for="mail">Email</label>
- 			       <input class="form__input" type="mail" name="mail"> 			
- 			       <label class="form__label" for="newslleter">Quiero recibir novedades por Mail</label>
- 			       <input class="form__input" type="checkbox" name="newslleter"> 			
- 			       <label class="form__label" for="consulta">Tu consulta es por:</label>
- 			       <select class="form__input">
- 				       <option value="incripcion">Inscripción</option>
- 				       <option value="pago">Pago</option>
- 				       <option value="reglamento">Reglamento</option>
- 				       <option value="otro">Otro</option>
- 			        </select> 		
- 			        <label class="form__label">Consultanos:</label>	
- 			        <textarea class="form__textArea">Escribí tu consulta aquí</textarea> 	
- 			        <input  class="form__button" type="submit" name="enviar">
- 			</fieldset>
- 	    </form>
+    <aside class="d-flex justify-content-center"> 
+      <form>  
+        <fieldset>
+          <legend class="h1">Si tenés dudas, escribinos!</legend>
+             <label class="form-label fs-2" for="nombre">Nombre</label>
+             <input class="form-control fs-3" type="text" name="nombre">      
+             <label class="form-label fs-2" for="mail">Email</label>
+             <input class="form-control fs-3" type="mail" name="mail">      
+             <label class="form-label fs-2" for="newslleter">Quiero recibir novedades por Mail</label>
+             <input class="form-check-label ms-2" type="checkbox" name="newslleter">      
+             <label class="form-label fs-2 d-block" for="consulta">Tu consulta es por:</label>
+             <select class="form-select fs-3">
+               <option class="fs-3" value="incripcion">Inscripción</option>
+               <option class="fs-3" value="pago">Pago</option>
+               <option class="fs-3" value="reglamento">Reglamento</option>
+               <option class="fs-3" value="otro">Otro</option>
+              </select>     
+              <label class="form-label fs-2">Consultanos:</label> 
+              <textarea class="form-control fs-2 mt-3 mb-3">Escribí tu consulta aquí</textarea>  
+              <input  class="btn btn-success fs-2" type="submit" name="enviar">
+      </fieldset>
+      </form>
     </aside>   
 </body>
     <footer>
@@ -74,5 +97,6 @@
       	<a href="https://instagram.com" target="blank"><img class="footer__ig" src="../assets/img/ig.png"></a>
       	<a href="https://whatsapp.com" target="blank"><img class="footer__wsp" src="../assets/img/wsp.png"></a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
