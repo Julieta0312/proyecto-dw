@@ -12,9 +12,6 @@ body {
 
 }
 
-/*      INDEX ------------------------------------------*/
-
-
 
 
 /*     SUBTITLES      */
@@ -150,9 +147,6 @@ body {
 	 height: 23rem;
 }
 
-
-
-
 @media (max-width: 768px) {
 	.info {
 		flex-direction: column;
@@ -171,6 +165,7 @@ body {
 		width: 25rem;
 	}
 }
+
 
 
 /*    TABLA POSICIONES  */
@@ -195,9 +190,7 @@ body {
 
 .posiciones {
 	width: 80%;
-	height: 40rem; 
-	padding-left: 5rem;
-	padding-right: 5rem;
+	height: 40rem; 	
 }
 
 
@@ -205,12 +198,12 @@ th {
 	font-size: 3rem;
 	font-weight: bold;
 	border: 0.2rem solid black;
-	background-color: #F4D105;
+	background-color: #f7e32a;
 }
 
 td {
 	border: 0.2rem solid black;
-	background-color: #FD370A;
+	background-color: #fa4a32;
 }
 
 tr {
@@ -219,6 +212,7 @@ tr {
      font-weight: bold;
 }
 
+ 
 @media (max-width: 600px) {
 	.posiciones {
 		width: 55rem;
@@ -240,7 +234,7 @@ tr {
 
 @media (max-width: 320px) {
 	.posiciones {
-       width: 30rem;
+       width: 25rem;
        height: 20rem;
 
 	}
@@ -507,84 +501,7 @@ width: 100%;
 
 
 
-/*    REGLAMENTO --------------------------------------------------------------*/
-.reglamento__title {
-	font-size: 4rem;
-	font-family: 'Signika', sans-serif;
-	text-align: center;
-	margin-top: 5rem;
-	margin-bottom: 5rem;
-}
-.reglamento__subtitle {
-	font-size: 3rem;
-	margin-left: 2rem;
-	margin-bottom: 2rem;
-	text-decoration: underline;
-	font-family: 'Signika', sans-serif;
-}
-
-.reglamento__lista {
-	list-style-type: disc;
-	margin-left: 5rem;
-}
-
-.reglamento__li {
-	font-size: 2rem;
-    margin-left: 2rem;
-    margin-bottom: 1rem;
-    font-family: 'Albert Sans', sans-serif;
-}
-
-@media (max-width: 320px) {
-	.reglamento__lista {
-		margin-left: 3rem;
-	}
-	.reglamento__subtitle {
-		font-size: 2.5rem;
-	}
-	.reglamento__li {
-		font-size: 1.5rem;
-	}
-}
-
-
-
-
-
-
 /* NOSOTROS    -----------------------------------------*/
-.nosotros__title {
-	font-size: 4rem;
-	text-align: center;
-	margin-bottom: 3rem;
-	margin-top: 3rem;
-}
-
-.nosotros__quienesSomos {
-	font-size: 2rem;
-	font-family: 'Caveat', cursive;
-	text-align: center;
-}
-
-.nosotros__subtitle {
-	font-size: 3rem;
-	margin-top: 3rem;
-	margin-bottom: 3rem;
-	text-align: center;
-	font-family: 'Playfair Display', serif;
-	font-weight: bold;
-	}
-
-
-.nosotros__box {
-	font-size: 2rem;
-	font-family: 'Caveat', cursive;
-	margin-left: 15rem;
-	border: 0.2rem dotted #f50fce;
-    padding: 1rem;
-    margin: 1rem; 
-    text-align: center;
-}
 
 .valores__flex {
 	display: flex;
@@ -594,7 +511,7 @@ width: 100%;
 	}
 
 .valores__item {
-	font-size: 3rem;
+	
 	border: 0.2rem dotted #f50fce;
 	padding: 1rem;
 }
@@ -619,10 +536,10 @@ width: 100%;
 	box-sizing: border-box;
 }
 
+
 @media (max-width: 480px) {
 	.form__textArea {
 		font-size: 1.5rem;
 		margin-left: 3rem;
 	}
 }
-
