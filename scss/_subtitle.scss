@@ -1,0 +1,54 @@
+$text-shadow: 0.2rem 0.2rem black;
+$text-shadow-hover: 0.6rem 0.6rem black;;
+$font-subtitle: 'Oswald', sans-serif;
+
+.subtitle {
+	background-image: url(../assets/img/captura.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	.subtitle__h2 {
+	font-size: 8rem;
+	text-align: center;
+    padding-top: 9rem;
+    font-weight: bold;
+    color: #fff700;
+    text-shadow: $text-shadow;
+    transition: text-shadow 1s;
+    font-family: $font-subtitle;
+    &:hover {
+	text-shadow: $text-shadow-hover;
+} 
+}
+    
+    .subtitle__p {
+	font-size: 6rem;
+    text-align: center;
+    padding-top: 7rem;
+    color: #fff700;
+    font-weight: bolder;
+    text-shadow: $text-shadow;
+    transition: text-shadow 1s;
+    font-family: $font-subtitle;
+    &:hover {
+	text-shadow: $text-shadow-hover;
+}
+}
+
+.subtitle__h3 {
+	font-size: 7rem;
+	text-align: center;
+	padding-top: 7rem;
+	padding-bottom: 12rem;
+	text-decoration: underline;
+	color: #fff700;
+	text-shadow: $text-shadow;
+	transition: text-shadow 1s;
+	transition: color 1s;
+	font-family: $font-subtitle;
+	&:hover {
+	text-shadow: $text-shadow-hover;
+	color: #FD370A;
+}
+}
+
+   }

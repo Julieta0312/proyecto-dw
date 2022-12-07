@@ -1,0 +1,129 @@
+* {
+	margin: 0;
+	padding:0;
+	font-size: 62.5%
+}
+
+/* GENERALES  -------------------------*/
+body {
+	background-color: #e1cfdd !important;
+	;
+
+}
+
+/*                   INDEX ----------   */
+
+@import "./_subtitle.scss";
+@import "./_galeria.scss";
+
+
+.info {
+	display: flex;
+	justify-content: space-around;
+	.tarjeta {
+	height: 5rem;
+	width: 30rem;
+	border: 0.3rem solid #FD370A;
+	background-image: linear-gradient(to bottom, #f0e405, #f08605);
+    transition: border-radius 3s;
+    transition: height 2s;
+    overflow: hidden;
+    &:hover {
+	 border-radius: 3rem;
+	 height: 23rem;
+}
+	}
+
+.tarjeta__title {
+	font-size: 3rem;
+	text-align: center;
+	text-decoration: underline;
+	&:hover {
+	transform: scale(1.1);
+} 
+}
+
+.tarjeta__desc {
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 2rem;
+	font-family: 'Kanit', sans-serif;
+	line-height: 4rem;
+}	
+}   
+
+section {
+	.tablapos__title {
+	font-size: 4rem;
+	text-align: center;
+	padding-top: 2rem;
+	
+	} 
+
+.tablapos__subtitle {
+	font-size: 3rem;
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+}
+
+.tablapos__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+} 
+
+.posiciones {
+	width: 80%;
+	height: 40rem; 	
+}
+th {
+	font-size: 3rem;
+	font-weight: bold;
+	border: 0.2rem solid black;
+	background-color: #f7e32a;
+}
+
+td {
+	border: 0.2rem solid black;
+	background-color: #fa4a32;
+}
+
+tr {
+	font-size: 3rem;
+     text-align: center;
+     font-weight: bold;
+}
+}
+
+
+
+footer {
+	.footer__fb {
+	width: 5rem;
+	height: 5rem;
+    position: relative;
+    left: 60rem;
+    top: 5rem;
+    &:hover {
+	transform: scale(1.1);
+}
+   }
+
+.footer__ig {
+	width: 5rem;
+	height: 5rem;
+	position: relative;
+	left: 65rem;
+	top: 5rem;
+	&:hover {
+	transform: scale(1.1);
+}
+}
+.footer__wsp {
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	width: 9rem;
+	height: 5rem;
+}
+}
