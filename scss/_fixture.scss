@@ -1,0 +1,22 @@
+$subt: 3rem;
+
+.fixture {    
+.fixture__title {
+    font-size: $subt;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+   margin-bottom: 3rem;
+   @media (max-width: 600px) {    
+        grid-template-columns: 1fr;
+    }
+}
+}

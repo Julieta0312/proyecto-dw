@@ -2,12 +2,14 @@ $text-shadow: 0.2rem 0.2rem black;
 $text-shadow-hover: 0.6rem 0.6rem black;;
 $font-subtitle: 'Oswald', sans-serif;
 
+
+
+
 .subtitle {
 	background-image: url(../assets/img/captura.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	.subtitle__h2 {
-	font-size: 8rem;
+	.subtitle__h2 {	
 	text-align: center;
     padding-top: 9rem;
     font-weight: bold;
@@ -16,12 +18,19 @@ $font-subtitle: 'Oswald', sans-serif;
     transition: text-shadow 1s;
     font-family: $font-subtitle;
     &:hover {
-	text-shadow: $text-shadow-hover;
-} 
-}
-    
-    .subtitle__p {
-	font-size: 6rem;
+	text-shadow: $text-shadow-hover;}
+ 
+@media (max-width: 600px) {
+	font-size: 7rem;
+	}
+	@media (max-width: 480px) {
+			font-size: 6rem;
+	}
+	@media (max-width: 320px) {	
+		font-size: 3rem;
+	}
+         }    
+    .subtitle__p {	
     text-align: center;
     padding-top: 7rem;
     color: #fff700;
@@ -30,12 +39,20 @@ $font-subtitle: 'Oswald', sans-serif;
     transition: text-shadow 1s;
     font-family: $font-subtitle;
     &:hover {
-	text-shadow: $text-shadow-hover;
-}
-}
+	text-shadow: $text-shadow-hover;}
 
-.subtitle__h3 {
-	font-size: 7rem;
+   @media (max-width: 600px) {
+   	font-size: 4.5rem;
+	}
+	@media (max-width: 480px) {
+font-size: 3rem;
+	}
+	@media (max-width: 320px) {
+font-size: 2rem;
+	}
+         }
+
+.subtitle__h3 {	
 	text-align: center;
 	padding-top: 7rem;
 	padding-bottom: 12rem;
@@ -49,6 +66,16 @@ $font-subtitle: 'Oswald', sans-serif;
 	text-shadow: $text-shadow-hover;
 	color: #FD370A;
 }
+@media (max-width: 600px) {
+font-size: 6rem;
+	}
+	@media (max-width: 480px) {
+font-size: 5rem;
+	}
+@media (max-width: 320px) {
+font-size: 2rem;}
 }
+}
+	
 
-   }
+   

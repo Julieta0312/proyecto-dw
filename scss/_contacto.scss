@@ -1,0 +1,24 @@
+$subt: 3rem;
+
+.contacto__title {	
+	margin-left: $subt; 
+	margin-top: 3rem;
+}
+
+.iframe {
+	padding: 3rem;
+	width: 75%;
+}
+
+.form__textArea {
+	margin-left: 5rem;
+	font-size: calc($subt - 1rem);
+	box-sizing: border-box;
+	@media (max-width: 480px) {
+			font-size: calc($subt / 2);
+		margin-left: 3rem;
+	}
+}
+
+
+

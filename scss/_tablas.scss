@@ -1,0 +1,31 @@
+$width: 40rem;
+$height: 30rem;
+
+
+.goleadoras {
+	width: $width;
+	height: $height;
+	@media (max-width: 480px){
+		width: calc($width - 10rem);
+	height: calc($height - 10rem);
+	}
+	@media (max-width: 320px) {	
+	width:  calc($width / 2);
+	height: calc($height / 2);
+}
+}
+
+.tarjetas {
+	width: $width;
+	height: $height;
+	@media (max-width: 480px){
+		width: calc($width - 10rem);
+	height: calc($height - 10rem);
+	}
+	@media (max-width: 320px) {	
+	width: calc($width / 2);
+	height: calc($height / 2);
+}
+}
+
+

@@ -1,0 +1,56 @@
+$subt: 3rem;
+
+@mixin flex ($justify-content, $align-items, $flex-direction, $flex-wrap) {
+	display: flex;
+	justify-content: $justify-content;
+	align-items: $align-items;
+	flex-direction: $flex-direction;   
+	flex-wrap: $flex-wrap; 
+}
+
+.equipos__title {
+	font-size: $subt;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.equipos {
+	@include flex (space-around, start, row, wrap);	
+	}
+.cardequipo {
+	height: 23rem;
+	width: 30rem;
+	border: 0.3rem solid #FD370A;
+	border-radius: 3rem;
+	background-image: linear-gradient(to bottom, #f0e405, #f08605);
+    transition: transform 1s;       
+    box-shadow: 0.3rem 0.3rem #FD370A;
+    &:hover {
+	 transform: scale(1.1);	}
+@media (max-width: 320px) {	
+		height: 25rem;
+	}
+}
+.card--margin {
+	@extend .cardequipo;
+		margin-bottom: 3rem;
+	}
+.tarjeta__title {
+	font-size: $subt;
+	text-align: center;
+	text-decoration: underline;
+&:hover {
+	transform: scale(1.1);
+} 
+}
+.equipos__lista {
+	margin-top: 2rem;
+	font-size: $subt;
+	margin-left: 3rem;
+	transition: margin-left 2s;
+&:hover {
+	margin-left: 12rem;
+} 
+}
+
+

@@ -1,0 +1,17 @@
+@mixin flex ($justify-content, $align-items, $flex-direction, $flex-wrap) {
+	display: flex;
+	justify-content: $justify-content;
+	align-items: $align-items;
+	flex-direction: $flex-direction;   
+	flex-wrap: $flex-wrap; 
+}
+
+
+.valores__flex {
+	@include flex (space-around, center, column, nowrap);	
+	min-height: 30rem;
+	.valores__item {	
+	border: 0.2rem dotted #f50fce;
+	padding: 1rem;
+}
+}
