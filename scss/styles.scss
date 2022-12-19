@@ -6,14 +6,13 @@
 
 /* GENERALES  -------------------------*/
 body {
-	background-color: #e1cfdd !important;
-	;
+	background: linear-gradient(to left, #77A1D3, #79CBCA, #E684AE);
 
 }
 
 
 
-@import "./_subtitle.scss";
+
 @import "./_galeria.scss";
 @import "./_fixture.scss";
 @import "./_equipos.scss";
@@ -45,43 +44,108 @@ $subt: 3rem;
 
 
 /*                   INDEX ----------   */
+
+
+.contenedor__title {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;	
+	justify-items: center;
+	margin-bottom: 5%;
+	@media (max-width: 320px) {
+		grid-template-columns: 1fr;
+
+	}
+
+.titles__item1 {
+	font-size: 4rem;
+	text-align: center;
+	font-family: 'Unbounded', cursive;
+	font-weight: bolder;
+	color: #470559;
+   margin-top: 20%;
+   line-height: 8rem;
+   transition: text-shadow 1s; 
+   @media (max-width: 768px) {
+   	font-size: 2.5rem;
+   }
+   @media (max-width: 600px) {
+   	font-size: 2rem;
+   	line-height: 6rem;
+   }
+   @media (max-width: 480px) {
+   	font-size: 1.5rem;
+   }
+   @media (max-width: 320px) {
+   	line-height: 4rem;
+
+   }
+}
+
+.titles__item2 {
+	width: 60%;
+	height: 60%;
+	margin-top: 10%;
+    
+}
+.titles__icono {
+	height: 8rem;
+	width: 8rem;
+	transition: transform 0.5s; 
+	@media (max-width: 768px) {
+		height: 7rem;
+		width: 7rem;
+	}
+	@media (max-width: 600px) {
+		height: 6rem;
+		width: 6rem;
+	}
+	@media (max-width: 480px) {
+		height: 5rem;
+		width: 5rem;
+	}
+	&:hover {
+	transform: rotate(100deg);
+}
+}
+}
+
+
+
+
+
 .info {
 	@include flex (space-around, start, row, nowrap);	
 	@media (max-width: 768px) {
 		flex-direction: column;
-		gap: 1rem;
+		gap: 2rem;
 		align-items: center;
 	}
-	.tarjeta {
-	height: 5rem;
-	width: 30rem;
-	border: 0.3rem solid #FD370A;
-	background-image: linear-gradient(to bottom, #f0e405, #f08605);
-    transition: border-radius 3s;
-    transition: height 2s;
-    overflow: hidden;
+	.tarjeta {	
+    border: 1px solid black;
+	width: 20%;	
+	height: 25%;
+	border-radius: 1rem;	
+	background: linear-gradient(to left, #abbaab, #ffffff);
+   transition: box-shadow 0.4s linear, transform 1s;
     &:hover {
-	 border-radius: 3rem;
-	 height: 23rem;
+	 box-shadow: 10px 10px 5px #535557;
+	transform: scale(1.1 , 1.1);
 }
-@media (max-width: 320px) {
-width: 25rem;
+@media (max-width: 768px) {
+	width: 50%;
 	}
-	&:hover {
-	 border-radius: 3rem;
-	 height: 15rem;
 }
-	}
 
 .tarjeta__title {
 	font-size: $subt;
 	text-align: center;
-	text-decoration: underline;
-	&:hover {
-	transform: scale(1.1);
-} 
+	text-decoration: underline;	
+@media (max-width: 480px) {
+	font-size: 2rem;
+}
 @media (max-width: 320px) {
-	font-size: calc($subt - 1rem);
+	font-size: 1.5rem;
 }
 }
 
@@ -91,8 +155,13 @@ width: 25rem;
 	margin-top: 2rem;
 	font-family: 'Kanit', sans-serif;
 	line-height: 4rem;
+	@media (max-width: 480px) {
+		font-size: 1.5rem;
+
+	}
 	@media (max-width: 320px) {
-font-size: calc($subt - 2rem);
+		font-size: 1rem;
+		line-height: 2rem;
 	}
 }	
 }   
@@ -101,7 +170,7 @@ section {
 	.tablapos__title {
 	font-size: $subt;
 	text-align: center;
-	padding-top: 2rem;
+	padding-top: 4rem;
 	
 	} 
 
@@ -118,13 +187,14 @@ section {
 .posiciones {
 	width: 80%;
 	height: 50%; 	
+	background: linear-gradient(to left, #f12711, #f5af19);
 }
 
 th {
 	font-size: $subt;
 	font-weight: bold;
 	border: 0.2rem solid black;
-	background-color: #f7e32a;
+	
 	@media (max-width: 480px) {
 font-size: calc($subt - 1rem);
 	}
@@ -134,8 +204,7 @@ font-size: calc($subt / 2);
 }
 
 td {
-	border: 0.2rem solid black;
-	background-color: #fa4a32;
+	border: 0.2rem solid black;	
 }
 
 tr {
@@ -197,4 +266,10 @@ width: map-get($redes, width);
 	height: 4rem;
 }
 }
+}
+
+.check {
+	width: 2rem;
+	height: 2rem;
+	margin-right: 1rem;
 }
