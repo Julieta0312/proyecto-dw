@@ -5,12 +5,12 @@ $height: 30rem;
 .goleadoras {
 	width: $width;
 	height: $height;
-	background: linear-gradient(to left, #f12711, #f5af19);
-	@media (max-width: 480px){
-		width: calc($width - 10rem);
-	height: calc($height - 10rem);
+	background-color: #f5eacb;
+	@media (max-width: 600px){
+		width: calc($width - 5rem);
+	height: calc($height - 5rem);
 	}
-	@media (max-width: 320px) {	
+	@media (max-width: 420px) {	
 	width:  calc($width / 2);
 	height: calc($height / 2);
 }
@@ -19,12 +19,12 @@ $height: 30rem;
 .tarjetas {
 	width: $width;
 	height: $height;
-	background: linear-gradient(to left, #f12711, #f5af19);
-	@media (max-width: 480px){
-		width: calc($width - 10rem);
-	height: calc($height - 10rem);
+	background-color: #f5eacb;
+	@media (max-width: 600px){
+		width: calc($width - 5rem);
+	height: calc($height - 5rem);
 	}
-	@media (max-width: 320px) {	
+	@media (max-width: 420px) {	
 	width: calc($width / 2);
 	height: calc($height / 2);
 }

@@ -11,8 +11,6 @@ body {
 }
 
 
-
-
 @import "./_galeria.scss";
 @import "./_fixture.scss";
 @import "./_equipos.scss";
@@ -20,13 +18,7 @@ body {
 @import "./_nosotros.scss";
 @import "./_contacto.scss";
 
-/*   BUCLE   ----------------*/
 
-@for $count from 1 to 6 {
-	.t-#{$count} {
-		font-size: 5rem + $count
-	}
-}
 
 /*  VARIABLES  ---------------*/
 
@@ -52,7 +44,7 @@ $subt: 3rem;
 	grid-template-rows: 1fr;	
 	justify-items: center;
 	margin-bottom: 5%;
-	@media (max-width: 320px) {
+	@media (max-width: 768px) {
 		grid-template-columns: 1fr;
 
 	}
@@ -63,11 +55,17 @@ $subt: 3rem;
 	font-family: 'Unbounded', cursive;
 	font-weight: bolder;
 	color: #470559;
-   margin-top: 20%;
+   margin-top: 15%;
+   padding-left: 1%;
    line-height: 8rem;
    transition: text-shadow 1s; 
+   @media (max-width: 900px) {
+   	font-size: 2.8rem;
+   	margin-top: 5%;
+   }
    @media (max-width: 768px) {
    	font-size: 2.5rem;
+   	margin-top: 5%;
    }
    @media (max-width: 600px) {
    	font-size: 2rem;
@@ -83,10 +81,20 @@ $subt: 3rem;
 }
 
 .titles__item2 {
-	width: 60%;
-	height: 60%;
-	margin-top: 10%;
-    
+	width: 60%;	
+	margin-top: 10%;	
+   .form-label {
+   	font-size: 2rem;   
+   @media (max-width: 900px) {
+   	font-size: 1.8rem;
+   }
+}
+.form-control {
+	font-size: 2rem;
+	@media (max-width: 900px) {
+   	font-size: 1.8rem;
+   }
+}    
 }
 .titles__icono {
 	height: 8rem;
@@ -111,7 +119,14 @@ $subt: 3rem;
 }
 
 
-
+.pf__title {
+	font-size: 3rem;
+	text-align: center;
+	margin-top: 3%;
+	@media (max-width: 600px) {
+	font-size: 2rem; 	
+	} 
+}
 
 
 .info {
@@ -125,6 +140,7 @@ $subt: 3rem;
     border: 1px solid black;
 	width: 20%;	
 	height: 25%;
+	padding: 1%;
 	border-radius: 1rem;	
 	background: linear-gradient(to left, #abbaab, #ffffff);
    transition: box-shadow 0.4s linear, transform 1s;
@@ -155,6 +171,10 @@ $subt: 3rem;
 	margin-top: 2rem;
 	font-family: 'Kanit', sans-serif;
 	line-height: 4rem;
+	@media (max-width: 1023px) {
+		line-height: 3rem;
+	}
+
 	@media (max-width: 480px) {
 		font-size: 1.5rem;
 
@@ -171,13 +191,18 @@ section {
 	font-size: $subt;
 	text-align: center;
 	padding-top: 4rem;
-	
+	@media (max-width: 600px) {
+	font-size: 2rem; 	
 	} 
+}
 
 .tablapos__subtitle {
 	font-size: $subt;
 	padding-bottom: 2rem;
 	padding-top: 2rem;
+	@media (max-width: 600px) {
+	font-size: 2rem; 	
+	} 
 }
 
 .tablapos__container {
@@ -187,19 +212,22 @@ section {
 .posiciones {
 	width: 80%;
 	height: 50%; 	
-	background: linear-gradient(to left, #f12711, #f5af19);
+	background-color: #f5eacb;
+	@media (max-width: 600px)	{
+		width: 90%;
+	}	
 }
 
 th {
-	font-size: $subt;
+	font-size: 3rem;
 	font-weight: bold;
 	border: 0.2rem solid black;
-	
-	@media (max-width: 480px) {
-font-size: calc($subt - 1rem);
+	background-color: #c67ef2;	
+	@media (max-width: 600px) {
+font-size: 2.5rem;
 	}
-	@media (max-width: 320px) {
-font-size: calc($subt / 2);
+	@media (max-width: 480px) {
+font-size: 1.5rem;
 	}
 }
 
@@ -208,16 +236,21 @@ td {
 }
 
 tr {
-	font-size: $subt;
+	font-size: 3rem;
      text-align: center;
      font-weight: bold;
-      @media (max-width: 480px) {
-font-size: calc($subt - 1rem);
+      @media (max-width: 600px) {
+font-size: 2.5rem;
     }	
-    @media (max-width: 320px) {
-font-size: calc($subt / 2);
-    }	
-    
+    @media (max-width: 420px) {
+font-size: 1.5rem;
+    }	    
+}
+.posiciones--primero {
+	background-color: #0cb32e;
+}
+.posiciones--ultimo {
+	background-color: #6c6a6e;
 }
 }
 
@@ -232,7 +265,8 @@ $redes:(width: 5rem,
 	width: map-get($redes, width);
 	height:  map-get($redes, height);
 	margin-top: map-get($redes, margin-top);	
-    margin-left: 45%;    
+    margin-left: 45%;  
+    margin-bottom: 1%;  
     &:hover {
 	transform: scale(1.1);
 }
@@ -246,7 +280,8 @@ $redes:(width: 5rem,
 width: map-get($redes, width);
 	height:  map-get($redes, height);
 	margin-top: map-get($redes, margin-top);		
-	margin-left: 2%;	
+	margin-left: 2%;
+	 margin-bottom: 1%;	
 	&:hover {
 	transform: scale(1.1);
 }

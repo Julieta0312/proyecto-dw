@@ -71,18 +71,18 @@
     <p class="titles__item1 animate__animated animate__fadeInLeftBig">TORNEO DE FUTBOL FEMENINO DE BS AS <br>
      Inscribite en pocos pasos y que ruede la pelota! <br>
      <img class="titles__icono" src="./assets/img/icono.png"></p>
-    <form class="titles__item2 animate__animated animate__fadeInRightBig">  
-              <fieldset >
+    <form class="titles__item2 animate__animated animate__fadeInRightBig" id="formulario">  
+              <fieldset>
                 <legend class="h1">Formulario de Inscripción</legend>
-              <label class="form-label fs-2" for="nombreequipo">Nombre del Equipo:</label>
-            <input class="form-control fs-3" type="text">
-            <label class="form-label fs-2" for="cantidadjugadores">Cantidad de Jugadoras:</label>
-                <input class="form-control fs-3" type="number">
-            <label class="form-label fs-2" for="numerocontacto">Número de celular:</label>
-                <input class="form-control fs-3" type="tel">
-            <label class="form-label fs-2" for="email">Email:</label>
-                <input class="form-control fs-3" type="email">
-            <label class="form-label fs-2" for="nivel">Nivel de juego:</label>
+              <label class="form-label" for="nombreequipo">Nombre del Equipo:</label>
+            <input class="form-control " type="text">
+            <label class="form-label" for="cantidadjugadores">Cantidad de Jugadoras:</label>
+                <input class="form-control" type="number">
+            <label class="form-label" for="numerocontacto">Número de celular:</label>
+                <input class="form-control " type="tel">
+            <label class="form-label" for="email">Email:</label>
+                <input class="form-control " type="email">
+            <label class="form-label" for="nivel">Nivel de juego:</label>
             <select class="form-select fs-3">
             <option class="fs-3" value="principiante">Principiante</option>
             <option class="fs-3" value="amateur">Amateur</option>
@@ -94,11 +94,11 @@
         <section class="info">
     	    <article class="tarjeta">
     		    <h3 class="tarjeta__title">2 Ligas</h3>
-    		     <p class="tarjeta__desc">Hay partidos todos los fin de semana! De 11 a 17 hs, juega la Liga A los sábados y la Liga B los domingos! </p>
+    		     <p class="tarjeta__desc">Hay partidos todos los fin de semana, de 11 a 17 hs. la Liga A juega los Sábados y la Liga B juega los Domingos!</p>
     	    </article>
     	    <article class="tarjeta">
     		    <h3 class="tarjeta__title">Ascensos</h3>
-    		    <p class="tarjeta__desc">Los primeros 2 equipos de la tabla de posiciones de la Liga B ascienden automáticamente a la Liga A. </p>
+    		    <p class="tarjeta__desc">Los primeros 2 equipos de la tabla de posiciones de la Liga B ascienden automáticamente a la Liga A.</p>
     	    </article>
     	    <article class="tarjeta">
     		    <h3 class="tarjeta__title">Predio</h3>
@@ -109,6 +109,71 @@
     		    <p class="tarjeta__desc">Copa al campeón y entregamos en cada partido vouchers a las mejores jugadoras de cada equipo.</p>
     	    </article>
         </section>
+
+<p class="pf__title">Preguntas frecuentes</p>
+<div class="accordion m-5" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="fs-2 accordion-button bg-warning bg-opacity-50" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        ¿Cómo inscribo mi equipo?
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="fs-3 accordion-body bg-warning bg-opacity-25">
+        Completá el <a class="fs-3 link-danger" href="#formulario">formulario de inscripción</a>. Luego de corroborar la información recibirás un mail con los medios de pago. El pago debe realizarse en un plazo de 72hs.  
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="fs-2 accordion-button collapsed bg-warning bg-opacity-50" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        ¿Cuánto cuesta el torneo? 
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+      <div class="fs-3 accordion-body bg-warning bg-opacity-25">
+        La inscripción cuesta $15.000 por equipo, luego cada día de partido se paga $1500 por equipo (para solventar gastos de médicos y árbitros). 
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="fs-2 accordion-button collapsed bg-warning bg-opacity-50" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        ¿Dónde mando la lista de buena fé? 
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+      <div class="fs-3 accordion-body bg-warning bg-opacity-25">
+        Luego de confirmado el pago recibirás un segundo mail, el cual deberás responder con la lista de buena fé. Se completa con nombre y apellido, DNI, edad y número de celular de cada una. Para más información sobre la lista chequeá el <a class="fs-3 link-danger" href="./secciones/reglamento.html" target="blank">reglamento</a>. 
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+      <button class="fs-2 accordion-button collapsed bg-warning bg-opacity-50" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+        ¿Cuándo se empieza a jugar? 
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+      <div class="fs-3 accordion-body bg-warning bg-opacity-25">
+        Luego de cerrar la inscripción, se confirmará el <a class="fs-3 link-danger" href="./secciones/fixture.html" target="blank">fixture</a> con especificaciones sobre fecha, día, horario y demás. 
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+      <button class="fs-2 accordion-button collapsed bg-warning bg-opacity-50" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+        ¿Dónde queda el predio? 
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+      <div class="fs-3 accordion-body bg-warning bg-opacity-25">
+        El predio queda en la localidad de Pilar. Para información más detallada, consultá el <a  class="fs-3 link-danger" href="./secciones/contacto.html#maps" target="blank">Google Maps</a>
+      </div>
+    </div>
+  </div>
+</div>
+
         <section>
         	<h2 class="tablapos__title">Tabla de Posiciones</h2>
         	<div class="tablapos__container">
@@ -123,116 +188,61 @@
 		        <th>GF</th>
 		        <th>GE</th>
                 <th>DG</th>
-		        <tr>
-			    <td>Equipo1</td>
-			    <td>26</td>
-			    <td>10</td>
-                <td>8</td>
-                <td>2</td>
-                <td>0</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
-		        <tr>
-			    <td>Equipo2</td>
-			    <td>24</td>
-			    <td>10</td>
-                <td>7</td>
-                <td>3</td>
-                <td>0</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
-		        <tr>
-			    <td>Equipo3</td>
-			    <td>23</td>
-			    <td>10</td>
-                <td>7</td>
-                <td>2</td>
-                <td>1</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
-		        <tr>
-			    <td>Equipo4</td>
-			    <td>22</td>
-			    <td>10</td>
-                <td>7</td>
-                <td>1</td>
-                <td>2</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
-		        <tr>
-			    <td>Equipo5</td>
-			    <td>21</td>
-			    <td>10</td>
-                <td>6</td>        
-                <td>3</td>
-                <td>1</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
-		        <tr>
-			    <td>Equipo6</td>
-			    <td>26</td>
-			    <td>10</td>
-                <td>8</td>
-                <td>2</td>
-                <td>0</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
-		        <tr>
-			    <td>Equipo7</td>
-			    <td>26</td>
-			    <td>10</td>
-                <td>8</td>
-                <td>2</td>
-                <td>0</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
-		        <tr>
-			    <td>Equipo8</td>
-			    <td>26</td>
-			    <td>10</td>
-                <td>8</td>
-                <td>2</td>
-                <td>0</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
-		        <tr>
-			    <td>Equipo9</td>
-			    <td>26</td>
-			    <td>10</td>
-                <td>8</td>
-                <td>2</td>
-                <td>0</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
-		        <tr>
-			    <td>Equipo10</td>
-			    <td>26</td>
-			    <td>10</td>
-                <td>8</td>
-                <td>2</td>
-                <td>0</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
+		        <tr class="posiciones--primero">
+                       <td>Boca Juniors</td>
+                       <td>27</td>
+                       <td>9</td>
+                       <td>9</td>
+                       <td>0</td>
+                       <td>0</td>
+                       <td>26</td>
+                       <td>7</td>
+                       <td>19</td>
+                    </tr>
+                    <tr>
+                       <td>Urquiza</td>
+                       <td>24</td>
+                       <td>9</td>
+                       <td>8</td>
+                       <td>1</td>
+                       <td>0</td>
+                       <td>22</td>
+                       <td>5</td>
+                       <td>17</td>
+                    </tr>
+                    <tr>
+                       <td>Racing</td>
+                       <td>23</td>
+                       <td>9</td>
+                       <td>7</td>
+                       <td>2</td>
+                       <td>0</td>
+                       <td>19</td>
+                       <td>6</td>
+                       <td>13</td>
+                    </tr>
+                    <tr>
+                       <td>River Plate</td>
+                       <td>21</td>
+                       <td>9</td>
+                       <td>7</td>
+                       <td>0</td>
+                       <td>2</td>
+                       <td>15</td>
+                       <td>10</td>
+                       <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>San Lorenzo</td>
+                        <td>19</td>
+                        <td>9</td>
+                        <td>6</td>        
+                        <td>1</td>
+                        <td>1</td>
+                        <td>15</td>
+                        <td>11</td>
+                        <td>4</td>
+                    </tr>		        
 	        </table> 
             <article class="tablapos__subtitle">LIGA B</article>         
 	        <table class="posiciones">
@@ -245,129 +255,73 @@
 		        <th>GF</th>
 		        <th>GE</th>
                 <th>DG</th>
-		        <tr>
-			    <td>Equipo1</td>
-			    <td>26</td>
-			    <td>10</td>
-                <td>8</td>
-                <td>2</td>
-                <td>0</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
-		        <tr>
-			    <td>Equipo2</td>
-			    <td>24</td>
-			    <td>10</td>
-                <td>7</td>
-                <td>3</td>
-                <td>0</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
-		        <tr>
-			    <td>Equipo3</td>
-			    <td>23</td>
-			    <td>10</td>
-                <td>7</td>
-                <td>2</td>
-                <td>1</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
-		        <tr>
-			    <td>Equipo4</td>
-			    <td>22</td>
-			    <td>10</td>
-                <td>7</td>
-                <td>1</td>
-                <td>2</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
-		        <tr>
-			    <td>Equipo5</td>
-			    <td>21</td>
-			    <td>10</td>
-                <td>6</td>        
-                <td>3</td>
-                <td>1</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
-		        <tr>
-			    <td>Equipo6</td>
-			    <td>26</td>
-			    <td>10</td>
-                <td>8</td>
-                <td>2</td>
-                <td>0</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
-		        <tr>
-			    <td>Equipo7</td>
-			    <td>26</td>
-			    <td>10</td>
-                <td>8</td>
-                <td>2</td>
-                <td>0</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
-		        <tr>
-			    <td>Equipo8</td>
-			    <td>26</td>
-			    <td>10</td>
-                <td>8</td>
-                <td>2</td>
-                <td>0</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
-		        <tr>
-			    <td>Equipo9</td>
-			    <td>26</td>
-			    <td>10</td>
-                <td>8</td>
-                <td>2</td>
-                <td>0</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
-		        <tr>
-			    <td>Equipo10</td>
-			    <td>26</td>
-			    <td>10</td>
-                <td>8</td>
-                <td>2</td>
-                <td>0</td>
-                <td>10</td>
-                <td>2</td>
-                <td>8</td>
-		        </tr>
+		        <tr class="posiciones--primero">
+                        <td>Barcelona</td>
+                        <td>27</td>
+                       <td>9</td>
+                       <td>9</td>
+                       <td>0</td>
+                       <td>0</td>
+                       <td>26</td>
+                       <td>7</td>
+                       <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>Real Madrid</td>
+                        <td>24</td>
+                       <td>9</td>
+                       <td>8</td>
+                       <td>1</td>
+                       <td>0</td>
+                       <td>22</td>
+                       <td>5</td>
+                       <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>Levante</td>
+                        <td>23</td>
+                       <td>9</td>
+                       <td>7</td>
+                       <td>2</td>
+                       <td>0</td>
+                       <td>19</td>
+                       <td>6</td>
+                       <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Atletico Madrid</td>
+                        <td>21</td>
+                       <td>9</td>
+                       <td>7</td>
+                       <td>0</td>
+                       <td>2</td>
+                       <td>15</td>
+                       <td>10</td>
+                       <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Real Sociedad</td>
+                        <td>19</td>
+                        <td>9</td>
+                        <td>6</td>        
+                        <td>1</td>
+                        <td>1</td>
+                        <td>15</td>
+                        <td>11</td>
+                        <td>4</td>
+                    </tr>		        
 	        </table>
 	        </div>
         </section>
         <aside class="galeria">
-		<h2 class="galeria__title">Galeria de fotos</h2>
+		<h2 class="galeria__title">Galería de fotos</h2>
 		    <div class="galeria__contenedor">
-                <img class="item item1" alt="galeriafoto1" src="./assets/img/foto1.webp">
-                <img class="item item2" alt="galeriafoto2" src="./assets/img/foto2.jpg">
-                <img class="item item3" alt="galeriafoto3" src="./assets/img/foto4.jpeg">
-                <img class="item item4" alt="galeriafoto4" src="./assets/img/foto3.jpg">
-                <img class="item item5" alt="galeriafoto5" src="./assets/img/foto5.webp">         
+                <img class="item item1" alt="galeria_pelota" src="./assets/img/foto1.webp">
+                <img class="item item2" alt="galeria_españa" src="./assets/img/foto2.jpg">
+                <img class="item item3" alt="galeria_inglaterra" src="./assets/img/foto4.jpeg">
+                <img class="item item4" alt="galeria_barcelona" src="./assets/img/foto3.jpg">
+                <img class="item item5" alt="galeria_boca" src="./assets/img/foto5.webp">        
             </div>
-
         </aside>
     </main>  
       	<footer class="footer">

@@ -1,8 +1,10 @@
-$subt: 3rem;
 
 .contacto__title {	
-	margin-left: $subt; 
+	margin-left: 3rem; 
 	margin-top: 3rem;
+	@media (max-width: 600px) {
+	font-size: 2rem; 	
+	} 
 }
 
 .iframe {
@@ -12,10 +14,10 @@ $subt: 3rem;
 
 .form__textArea {
 	margin-left: 5rem;
-	font-size: calc($subt - 1rem);
+	font-size: 2rem;
 	box-sizing: border-box;
 	@media (max-width: 480px) {
-			font-size: calc($subt / 2);
+			font-size: 1.5rem;
 		margin-left: 3rem;
 	}
 }
